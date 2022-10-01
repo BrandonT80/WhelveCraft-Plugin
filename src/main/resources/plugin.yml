@@ -1,0 +1,26 @@
+name: WhelveCraft
+main: bct.loadupstudios.WhelveCraft.WhelveCraft
+version: 0.0.1-SNAPSHOT
+api-version: 1.13
+author: BrandonT80
+website: https://www.loadupstudios.com
+depend: [Essentials]
+prefix: WhelveCraft
+commands:
+   WhelveCraft:
+      description: 
+      usage: /WhelveCraft
+   whelvehunt:
+      description:
+      usage: /WhelveHunt
+permissions:
+  WhelveCraft.*:
+    desription: Wildcard Permission
+    default: op
+    children:
+      WhelveCraft.staff: true
+      whelvehunt.staff: true
+  whelvehunt.staff:
+    desription: WhelveHunt Staff permission
+    default: op
+    children:
